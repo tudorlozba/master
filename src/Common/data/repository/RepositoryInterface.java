@@ -9,4 +9,5 @@ public interface RepositoryInterface<Entity>
      Iterable<Entity> findAll();
      void save(Entity e);
      Entity findById(String id);
+     String getValidId();
 }

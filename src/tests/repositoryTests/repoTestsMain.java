@@ -6,4 +6,11 @@ package tests.repositoryTests;
  * Run all repo tests here
  */
 public class repoTestsMain {
+
+    public static void main(String[] args) {
+
+        repoXmlTest repo = new repoXmlTest();
+        repo.testRepoXML();
+    }
+
 }
