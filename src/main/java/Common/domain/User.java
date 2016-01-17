@@ -2,8 +2,9 @@ package Common.domain;
 
 
 public class User {
-    public String name;
-    public String password;
+    private String id;
+    private String name;
+    private String password;
 
     public User(){
         this.name="";
@@ -64,5 +65,9 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getId() {
+        return id;
     }
 }

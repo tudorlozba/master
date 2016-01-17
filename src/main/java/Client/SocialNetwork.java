@@ -49,19 +49,6 @@ public class SocialNetwork extends Application{
         try {
             //trying to establish connection to the server
             client.connect();
-            //if successful, read response from server
-
-            /*while (true) {
-                if (client.authenticate("", "")) {
-                    break;
-                }
-                else System.out.print("Log in failed! Try Again!\n");
-            }
-*/
-            //UserInterface userInterface = new UserInterface(client);
-            //System.out.print("Client socket:"+client);
-            //userInterface.run();
-
 
         } catch (UnknownHostException e) {
             System.err.println("Host unknown. Cannot establish connection");
