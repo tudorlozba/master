@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Common/core/Serializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Client/Controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/Client/Controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Client/GUI/SocialNetworkMainView.java" afterPath="$PROJECT_DIR$/src/main/java/Client/GUI/SocialNetworkMainView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Client/Service/SocialNetworkServiceClient.java" afterPath="$PROJECT_DIR$/src/main/java/Client/Service/SocialNetworkServiceClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Client/SocialNetwork.java" afterPath="$PROJECT_DIR$/src/main/java/Client/SocialNetwork.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Common/domain/Post.java" afterPath="$PROJECT_DIR$/src/main/java/Common/domain/Post.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Common/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/Common/domain/User.java" />
     </list>
@@ -109,16 +106,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialNetwork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Client/SocialNetwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SocialNetworkMainView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Client/GUI/SocialNetworkMainView.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,10 +122,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Common/domain/Post.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,6 +141,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Common/domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.12729844">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Client/Controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -164,11 +161,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialNetworkServiceClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SocialNetworkServiceClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Client/Service/SocialNetworkServiceClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.028680688">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Serializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Common/core/Serializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -200,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Common/core/AsyncCallback.java" />
         <option value="$PROJECT_DIR$/src/Common/data/core/AsyncCallback.java" />
         <option value="$PROJECT_DIR$/src/Common/data/data/model/ValidationException.java" />
         <option value="$PROJECT_DIR$/src/Commondata/model/Validator.java" />
@@ -245,12 +251,13 @@
         <option value="$PROJECT_DIR$/src/main/java/Server/Service/SocialNetworkServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/Service/SocketClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/GUI/WelcomeView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Common/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/SocialNetwork.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Common/domain/Post.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/GUI/SocialNetworkMainView.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/Controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/Service/SocialNetworkServiceClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/core/Serializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/domain/Post.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Common/domain/User.java" />
       </list>
     </option>
   </component>
@@ -659,6 +666,10 @@
               <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -825,9 +836,18 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/Server" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/Common/core" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Client.Controller" />
       <recent name="Common.data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Client/GUI" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/tests" />
+      <recent name="$PROJECT_DIR$/src/Common/domain" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Server.Service" />
@@ -835,12 +855,6 @@
       <recent name="Client.GUI" />
       <recent name="Client.Controller" />
       <recent name="Common.Service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Client/GUI" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/tests" />
-      <recent name="$PROJECT_DIR$/src/Common/domain" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SocialNetwork">
@@ -1382,12 +1396,12 @@
       <workItem from="1452867326232" duration="283000" />
       <workItem from="1452872134673" duration="2936000" />
       <workItem from="1452945815435" duration="14229000" />
-      <workItem from="1453026357127" duration="4798000" />
+      <workItem from="1453026357127" duration="5366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41555000" />
+    <option name="totallyTimeSpent" value="42123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
@@ -1400,11 +1414,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32403433" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25034013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="21" y="343" width="1398" height="184" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25034013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="21" y="343" width="1398" height="184" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21244635" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1421,7 +1436,6 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1446,13 +1460,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1585,6 +1592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1739,17 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/TableColumn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1814,19 +1811,8 @@
         <state vertical-scroll-proportion="13.250478">
           <caret line="563" column="35" selection-start-line="563" selection-start-column="35" selection-end-line="563" selection-end-column="35" />
           <folding>
-            <element signature="e#23452#23453#0" expanded="true" />
-            <element signature="e#23483#23484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/domain/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#23452#23453#0" expanded="false" />
+            <element signature="e#23483#23484#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1836,8 +1822,8 @@
         <state vertical-scroll-proportion="3.2695985">
           <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
           <folding>
-            <element signature="e#4302#4303#0" expanded="true" />
-            <element signature="e#4344#4345#0" expanded="true" />
+            <element signature="e#4302#4303#0" expanded="false" />
+            <element signature="e#4344#4345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1862,8 +1848,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Client/Service/SocialNetworkServiceClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028680688">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/core/Serializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/domain/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Common/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12729844">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>

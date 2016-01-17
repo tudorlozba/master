@@ -1,7 +1,9 @@
 package Common.domain;
 
 
-public class User {
+import Common.core.Serializer;
+
+public class User extends Serializer{
     private String id;
     private String name;
     private String password;
