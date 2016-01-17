@@ -9,6 +9,17 @@ public class Post extends Serializer{
 
     private String user;
     private String content;
+
+    public Post(String user, String content){
+        this.user = user;
+        this.content = content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+
     public String getUser(){
         return this.user;
     }

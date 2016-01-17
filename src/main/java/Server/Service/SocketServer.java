@@ -44,7 +44,6 @@ public class SocketServer {
             Thread thread = new Thread(socialNetworkService);
             thread.start();
 
-            //serverMainApp.run();
         }
     }
 

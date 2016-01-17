@@ -106,18 +106,18 @@ public class SocialNetworkMainView extends GridPane {
         add(vBoxForPosts,1,0);
 
 
-        //fetchPosts();
+        fetchPosts();
         fetchUsers();
     }
 
     private void fetchUsers() {
-        //TODO Get users from server
 
         logger.info("fetching works...");
         Service<ArrayList<User>> fetchService = UserController.fetchUsersService();
         Dialog<Boolean> loading = AlertUtils.cancellableDialog("Loading", "Please wait ...");
         loading.setOnCloseRequest(event -> fetchService.cancel());
         loading.show();
+
         fetchService.setOnSucceeded(e -> { // prepare what to do when the call succeeds
             logger.info("fetch works service succeeded"); // executed on app thread
             //ObservableList<Node> children = vBoxForOperas.getChildren();
@@ -144,8 +144,30 @@ public class SocialNetworkMainView extends GridPane {
     }
 
     private void fetchPosts() {
-        //TODO Get posts from server
-
+        logger.info("fetching works...");
+        Service<ArrayList<Post>> fetchService = PostsController.fetchPostsService();
+        Dialog<Boolean> loading = AlertUtils.cancellableDialog("Loading", "Please wait ...");
+        loading.setOnCloseRequest(event -> fetchService.cancel());
+        loading.show();
+        fetchService.setOnSucceeded(e -> { // prepare what to do when the call succeeds
+            logger.info("fetch works service succeeded"); // executed on app thread
+            observablePostsList.clear();
+            observablePostsList.addAll(fetchService.getValue());
+            loading.close();
+        });
+        fetchService.setOnFailed(e -> { // prepare what to do when the call fails
+            Throwable exception = e.getSource().getException();
+            logger.warn("fetch works service failed", exception);
+            loading.close();
+            AlertUtils.showError(exception);
+        });
+        fetchService.setOnCancelled(e -> { // prepare what to do when the call was cancelled
+            logger.info("fetch works service cancelled");
+            loading.close();
+        });
+        logger.info("starting fetch works service");
+        fetchService.start(); // start the async call/task (from app thread)
+        // the task is executed on background threads
     }
 
     private void setPostsTable() {
@@ -166,7 +188,7 @@ public class SocialNetworkMainView extends GridPane {
                 }
         );
         postsTable.setItems(observablePostsList);
-        postsTable.setEditable(true);
+        postsTable.setEditable(false);
         setColumnsForPostsTable();
 
 
@@ -190,20 +212,20 @@ public class SocialNetworkMainView extends GridPane {
                     }
             );
             usersTable.setItems(observableUsersList);
-            usersTable.setEditable(true);
+            usersTable.setEditable(false);
             setColumnsForUsersTable();
 
     }
 
     private void setColumnsForPostsTable() {
-        TableColumn idCol = new TableColumn("User");
-        TableColumn nameCol = new TableColumn("Content");
-        idCol.setMinWidth(50);
-        idCol.setCellValueFactory(new PropertyValueFactory<User, Integer>("user"));
-        //nameCol.setMinWidth(250);
-        nameCol.setCellValueFactory(new PropertyValueFactory<User, String>("content"));
-
-        postsTable.getColumns().addAll(idCol, nameCol);
+        TableColumn userCol = new TableColumn("User");
+        TableColumn contentCol = new TableColumn("Content");
+        userCol.setMinWidth(50);
+        userCol.setCellValueFactory(new PropertyValueFactory<User, Integer>("user"));
+        userCol.setPrefWidth(50);
+        contentCol.setCellValueFactory(new PropertyValueFactory<User, String>("content"));
+        contentCol.setPrefWidth(500);
+        postsTable.getColumns().addAll(userCol, contentCol);
     }
 
     private void setColumnsForUsersTable() {

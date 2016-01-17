@@ -2,6 +2,7 @@ package Client.Service;
 
 
 import Common.Service.SocialNetworkService;
+import Common.domain.Post;
 import Common.domain.User;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -24,7 +25,12 @@ public class SocialNetworkServiceClient implements SocialNetworkService {
         this.user = user;
     }
 
-    public void viewPosts() {
+    public ArrayList<Post> viewPosts() {
+        Post post1 = new Post("User1", "This is the first post");
+        Post post2 = new Post("User2", "This is the second post");
+
+        Post[] posts = {post1, post2};
+        return new ArrayList<>(Arrays.asList(posts));
     }
 
     public ArrayList<User> viewUsers() {
