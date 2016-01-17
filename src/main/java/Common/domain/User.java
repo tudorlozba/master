@@ -18,6 +18,12 @@ public class User extends Serializer{
         this.password = password;
     }
 
+    public User(String id, String name, String password) {
+        this.id=id;
+        this.name=name;
+        this.password=password;
+    }
+
     public void setName(String name){
         this.name=name;
     }
@@ -71,5 +77,9 @@ public class User extends Serializer{
 
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

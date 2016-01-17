@@ -9,8 +9,8 @@ public class repoTestsMain {
 
     public static void main(String[] args) {
 
-        //repoXmlTest repo = new repoXmlTest();
-        //repo.testRepoXML();
+        repoXmlTest repo = new repoXmlTest();
+        repo.testRepoXML();
     }
 
 }

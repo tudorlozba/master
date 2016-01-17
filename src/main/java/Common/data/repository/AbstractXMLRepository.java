@@ -30,16 +30,18 @@ public abstract class AbstractXMLRepository<Entity> implements
 
     protected Validator<Entity> validator;
 
-    protected String filename = "test.xml";
+    protected String filename;
 
     public AbstractXMLRepository()
     {
         validator = null;
+        filename = null;
 
     }
-    public AbstractXMLRepository(Validator validator)
+    public AbstractXMLRepository(Validator validator, String filename)
     {
         this.validator = validator;
+        this.filename=filename;
 
     }
     public void setValidator(Validator validator)
@@ -122,7 +124,7 @@ public abstract class AbstractXMLRepository<Entity> implements
                                 String methodName = new String("set"
                                         + fieldName.substring(0, 1)
                                         .toUpperCase()
-                                        + fieldName.substring(1));
+                                        + fieldName.substring(1).toLowerCase());
                                 String value = reader.getAttributeValue(null,
                                         fieldName);
                                 Method method = null;
@@ -214,7 +216,7 @@ public abstract class AbstractXMLRepository<Entity> implements
         try
         {
             XMLStreamWriter writer = factory
-                    .createXMLStreamWriter(new FileWriter(filename));
+                    .createXMLStreamWriter(new FileWriter("src/main/resources/"+filename));
 
             // writer.writeStartDocument();
             writer.writeStartElement(DOCUMENT);
