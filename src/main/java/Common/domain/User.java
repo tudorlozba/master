@@ -4,15 +4,23 @@ package Common.domain;
 public class User {
     public String name;
     public String password;
+    public String id;
+
 
     public User(){
         this.name="";
         this.password ="";
+        this.id="";
     }
 
     public User(String name, String password){
         this.name=name;
         this.password = password;
+    }
+    public User(String id ,String name, String password){
+        this.name=name;
+        this.password = password;
+        this.id=id;
     }
 
     public void setName(String name){
@@ -21,6 +29,8 @@ public class User {
     public void setPassword(String password){
         this.password = password;
     }
+    public void setId(String id){ this.id = id;}
+
 
     public String getName(){return this.name;}
 

@@ -11,6 +11,10 @@ public class repoTestsMain {
 
         //repoXmlTest repo = new repoXmlTest();
         //repo.testRepoXML();
+
+        repoFileTest repo = new repoFileTest();
+        repo.testFileRepo();
+
     }
 
 }
