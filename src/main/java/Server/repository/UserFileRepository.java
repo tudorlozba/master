@@ -57,7 +57,7 @@ public class UserFileRepository extends FileRepositoryInterface<User> {
                Iterator<User> iterator = entities.iterator();
                while(iterator.hasNext()){
                     User entity = (User) iterator.next();
-                    pw.println(entity.id + " " + entity.getName() + " " + entity.getPassword());
+                    pw.println(entity.getId() + " " + entity.getName() + " " + entity.getPassword());
 
                }
                pw.close();
